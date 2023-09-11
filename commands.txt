@@ -10,5 +10,14 @@ curl --output /tmp/uuid.json  <URL>
 
 curl -o /dev/null --write-out "type: %{content_type}"  <URL>
 
+curl -T /tmp/hello.txt  <URL>
 
+curl -v --speed-limit 10 --speed-time 3  <URL>
+
+curl --limit-rate 3  <URL>
+curl --limit-rate 3k  <URL>
+curl --limit-rate 3m  <URL>
+curl --limit-rate 3g  <URL>
+curl --limit-rate 3t  <URL>
+curl --limit-rate 3p  <URL>
 
