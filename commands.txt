@@ -1,0 +1,14 @@
+curl --help
+
+curl -V or curl --version
+
+curl --no-silent <URL>
+
+curl --silent  <URL>
+
+curl --output /tmp/uuid.json  <URL>
+
+curl -o /dev/null --write-out "type: %{content_type}"  <URL>
+
+
+
