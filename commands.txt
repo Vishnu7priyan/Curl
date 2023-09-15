@@ -21,3 +21,15 @@ curl --limit-rate 3g  <URL>
 curl --limit-rate 3t  <URL>
 curl --limit-rate 3p  <URL>
 
+curl --output-dir /tmp -o "out_#1_#2.txt"  <URL>
+
+curl --no-silent --progress-bar <URL>
+
+curl  -w "\nstatus: %{response_code}\ntype: %{content_type}"  http://httpbin/status/429
+
+curl  -w "\ndate:%header{date}\nlength:%header{content-length}" <URL>
+
+
+
+
+
