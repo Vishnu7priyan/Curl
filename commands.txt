@@ -29,6 +29,14 @@ curl  -w "\nstatus: %{response_code}\ntype: %{content_type}"  <URL>
 
 curl  -w "\ndate:%header{date}\nlength:%header{content-length}" <URL>
 
+curl --json '{"name": "alice"}' URL
+curl -w "%{http_version}" URL
+
+
+
+
+
+
 
 
 
