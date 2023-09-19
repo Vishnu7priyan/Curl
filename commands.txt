@@ -32,7 +32,8 @@ curl  -w "\ndate:%header{date}\nlength:%header{content-length}" <URL>
 curl --json '{"name": "alice"}' URL
 curl -w "%{http_version}" URL
 
-
+curl -L --max-redirs 3 URL
+curl -T /tmp/hello.txt URL/put
 
 
 
